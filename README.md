@@ -2,8 +2,10 @@
 SAS notes
 
 ## Keywords
-`variable` 即column
-`observation` 即row
+
+- `variable` 即column
+- `observation` 即row
+- `ODs` Output Delivery System
 
 ## Data types
 SAS软件只有两类变量。
