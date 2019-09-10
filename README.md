@@ -1,6 +1,10 @@
 # SAS notes
 SAS notes
 
+## Keywords
+`variable` 即column
+`observation` 即row
+
 ## Data types
 SAS软件只有两类变量。
 
