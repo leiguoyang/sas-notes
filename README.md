@@ -5,7 +5,7 @@ SAS notes
 
 - `variable` 即column
 - `observation` 即row
-- `ODs` Output Delivery System
+- `ODS` Output Delivery System
 
 ## Data types
 SAS软件只有两类变量。
