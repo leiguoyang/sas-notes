@@ -39,3 +39,35 @@ data data_set_name;
 data data_set_name;
   set Mylib.Productsales;
 ```
+
+## Macro
+### Macro variable
+定义一个macro variable
+
+```
+%let variable_name = variable_value;
+```
+
+调用一个macro variable.You refer to the variable by preceding the variable name with an ampersand (&)
+
+```
+title "Data for &variable_value";
+```
+
+### Macro definition
+
+定义一个macro.
+
+```
+%macro plot(yvar= ,xvar= );
+   proc plot;
+      plot &yvar*&xvar;
+   run;
+%mend plot;
+```
+
+调用一个macro.
+
+```
+%plot(yvar=income,xvar=age)
+```
