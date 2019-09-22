@@ -56,10 +56,18 @@ title "Data for &variable_value";
 
 ### Macro definition
 
+定义一个macro.
+
 ```
 %macro plot(yvar= ,xvar= );
    proc plot;
       plot &yvar*&xvar;
    run;
 %mend plot;
+```
+
+调用一个macro.
+
+```
+%plot(yvar=income,xvar=age)
 ```
