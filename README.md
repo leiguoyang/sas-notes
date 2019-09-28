@@ -71,3 +71,24 @@ title "Data for &variable_value";
 ```
 %plot(yvar=income,xvar=age)
 ```
+
+## Plot
+
+Plot可以显示两个或多个variables之间的关系。
+
+```
+proc plot data=data_set_name;
+  plot vertical*horizontal;
+run;
+```
+
+其中`vertical`是其中一个variable, 而`horizontal`是另外一个variable。如
+
+```
+proc plot data=data_set_name;
+  plot price*date;
+run;
+```
+
+
+详细使用请参考[Plotting one set of variables](https://documentation.sas.com/?cdcId=pgmsascdc&cdcVersion=9.4_3.4&docsetId=basess&docsetTarget=p1ebornamhs8z0n1vao2wlbfiwqb.htm&locale=zh-CN)
