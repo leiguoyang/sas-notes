@@ -92,3 +92,14 @@ run;
 
 
 详细使用请参考[Plotting one set of variables](https://documentation.sas.com/?cdcId=pgmsascdc&cdcVersion=9.4_3.4&docsetId=basess&docsetTarget=p1ebornamhs8z0n1vao2wlbfiwqb.htm&locale=zh-CN)
+
+## SQL
+
+### Creating a table
+
+```
+proc sql;
+  create table table_name as query_result_set;
+```
+
+
