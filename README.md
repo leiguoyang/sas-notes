@@ -26,6 +26,35 @@ SAS软件只有两类变量。
 ## Steps
 SAS程序包含两类程序步，DATA步和PROC步。DATA 步通常用于创建或修改 SAS 数据集，但也可用来生成定制报表。
 
+## Statement
+SAS programs consist of DATA and PROC steps, and each step consists of statements.
+
+```
+data ...;
+  other statements;
+run;
+```
+
+```
+proc ...;
+  other statements;
+run;
+```
+
+Global statements are outside steps.
+
+```
+title ...;
+```
+
+```
+options ...;
+```
+
+```
+libname ...;
+```
+
 ## Data set
 创建一个新的data set.
 
