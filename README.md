@@ -191,5 +191,5 @@ run;
 A single line comment.
 
 ```
-* This is a commment
+* This is a commment;
 ```
