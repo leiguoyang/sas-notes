@@ -35,6 +35,11 @@ Column names can be
 - must start with a letter or underscore and continue with letters, numbers or underscores.
 
 ### Library name
+Library name
+
+- 最多8个字符
+- starts with letters or underscore
+- continue with letters, numbers or underscores
 
 ## Statement
 SAS programs consist of DATA and PROC steps, and each step consists of statements.
@@ -74,8 +79,18 @@ libname libref engine path;
 例如
 
 ```sas
+libname sales 'c/user/data';
+```
+
+默认的engine是base。
+
+用library读取excel文件。
+
+```sas
 libname NP xlsx '~/EPG194/data/np_info.xlsx';
 ```
+
+`np_info.xlsx`这个文件的一个个worksheet就会变成`NP`里的一个个对应的data set，或者说SAS table.
 
 ## Importing data
 
