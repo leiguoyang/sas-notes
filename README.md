@@ -83,7 +83,7 @@ libname NP xlsx '~/EPG194/data/np_info.xlsx';
 
 ```
 proc import datafile='path_to_file' dbms=csv out=library_name.data_set_name <replace>;
-<gussingrow=n>;
+<guessingrows=n>;
 run;
 ```
 
