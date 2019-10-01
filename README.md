@@ -77,6 +77,24 @@ libname libref engine path;
 libname NP xlsx '~/EPG194/data/np_info.xlsx';
 ```
 
+## Importing data
+
+导入CSV文件。
+
+```
+proc import datafile='path_to_file' dbms=csv out=library_name.data_set_name <replace>;
+<guessingrows=n>;
+run;
+```
+
+导入excel(xlsx)文件。
+
+```
+proc import datafile="path_to_file" dbms=xlsx out=library_name.data_set_name <replace>;
+<sheet=worksheet_name>;
+run;
+```
+
 ## Data set
 创建一个新的data set.
 
