@@ -26,6 +26,16 @@ SAS软件只有两类变量。
 ## Steps
 SAS程序包含两类程序步，DATA步和PROC步。DATA 步通常用于创建或修改 SAS 数据集，但也可用来生成定制报表。
 
+## Naming convention
+
+### Column name
+Column names can be
+
+- 1-32 characters
+- must start with a letter or underscore and continue with letters, numbers or underscores.
+
+### Library name
+
 ## Statement
 SAS programs consist of DATA and PROC steps, and each step consists of statements.
 
