@@ -64,6 +64,18 @@ options ...;
 ```
 libname ...;
 ```
+## Library
+创建一个library reference.
+
+```sas
+libname libref engine path;
+```
+
+例如
+
+```sas
+libname NP xlsx '~/EPG194/data/np_info.xlsx';
+```
 
 ## Data set
 创建一个新的data set.
