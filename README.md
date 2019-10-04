@@ -44,13 +44,13 @@ Library name
 ## Statement
 SAS programs consist of DATA and PROC steps, and each step consists of statements.
 
-```
+```sas
 data ...;
   other statements;
 run;
 ```
 
-```
+```sas
 proc ...;
   other statements;
 run;
@@ -58,17 +58,18 @@ run;
 
 Global statements are outside steps.
 
-```
+```sas
 title ...;
 ```
 
-```
+```sas
 options ...;
 ```
 
-```
+```sas
 libname ...;
 ```
+
 ## Library
 创建一个library reference.
 
@@ -96,7 +97,7 @@ libname NP xlsx '~/EPG194/data/np_info.xlsx';
 
 导入CSV文件。
 
-```
+```sas
 proc import datafile='path_to_file' dbms=csv out=library_name.data_set_name <replace>;
 <guessingrows=n>;
 run;
@@ -104,7 +105,7 @@ run;
 
 导入excel(xlsx)文件。
 
-```
+```sas
 proc import datafile="path_to_file" dbms=xlsx out=library_name.data_set_name <replace>;
 <sheet=worksheet_name>;
 run;
@@ -113,13 +114,13 @@ run;
 ## Data set
 创建一个新的data set.
 
-```
+```sas
 data data_set_name;
 ```
 
 给新的data set赋值。
 
-```
+```sas
 data data_set_name;
   set Mylib.Productsales;
 ```
@@ -128,13 +129,13 @@ data data_set_name;
 ### Macro variable
 定义一个macro variable
 
-```
+```sas
 %let variable_name = variable_value;
 ```
 
 调用一个macro variable.You refer to the variable by preceding the variable name with an ampersand (&)
 
-```
+```sas
 title "Data for &variable_value";
 ```
 
@@ -142,7 +143,7 @@ title "Data for &variable_value";
 
 定义一个macro.
 
-```
+```sas
 %macro plot(yvar= ,xvar= );
    proc plot;
       plot &yvar*&xvar;
@@ -152,7 +153,7 @@ title "Data for &variable_value";
 
 调用一个macro.
 
-```
+```sas
 %plot(yvar=income,xvar=age)
 ```
 
@@ -160,7 +161,7 @@ title "Data for &variable_value";
 
 Plot可以显示两个或多个variables之间的关系。
 
-```
+```sas
 proc plot data=data_set_name;
   plot vertical*horizontal;
 run;
@@ -168,7 +169,7 @@ run;
 
 其中`vertical`是其中一个variable, 而`horizontal`是另外一个variable。如
 
-```
+```sas
 proc plot data=data_set_name;
   plot price*date;
 run;
@@ -181,7 +182,7 @@ run;
 
 A multi-line comment.
 
-```
+```sas
 /* This is a comment */
 data data_set_name;
   set ...;
@@ -190,7 +191,7 @@ run;
 
 A single line comment.
 
-```
+```sas
 * This is a commment;
 ```
 
