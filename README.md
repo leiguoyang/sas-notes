@@ -111,6 +111,25 @@ proc import datafile="path_to_file" dbms=xlsx out=library_name.data_set_name <re
 run;
 ```
 
+## Exporting data
+```sas
+proc export data=library_name.data_set_name
+file='path_to_file'
+dbms=dbms_name
+<replace>;
+run;
+```
+
+导出成excel文件
+```sas
+proc export data=sdf.orders
+file='&tmpdir.text.xlsx'
+dbms=xlsx
+replace;
+sheet='orders';
+run;
+```
+
 ## Data set
 创建一个新的data set.
 
