@@ -176,6 +176,18 @@ title "Data for &variable_value";
 %plot(yvar=income,xvar=age)
 ```
 
+### Do statement
+
+```sas
+%macro do_sth();
+  %do i = 1 %to 10;
+    %put Hello;
+  %end;
+%mend;
+
+%do_sth;
+```
+
 ## Plot
 
 Plot可以显示两个或多个variables之间的关系。
