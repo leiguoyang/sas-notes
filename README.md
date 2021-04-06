@@ -235,6 +235,10 @@ proc sql;
   create table table_name as query_result_set;
 ```
 
-## Reference
+## Links
+
+- [SAS documentation](https://documentation.sas.com/?cdcId=pgmsascdc&cdcVersion=9.4_3.5&docsetId=lestmtsref&docsetTarget=p1awxgleif5wlen1pja0nrn6yi6i.htm&locale=en)
+- [Free SAS training](https://www.sas.com/en_us/training/offers/free-training.html)
+- [Base SAS](https://support.sas.com/en/software/base-sas-support.html)
 - [Graph](https://documentation.sas.com/?docsetId=graphref&docsetTarget=p15qcl2nzalw4zn1fp6rkrf3n9kn.htm&docsetVersion=9.4&locale=en)
 - [Format and informat](https://documentation.sas.com/?docsetId=leforinforref&docsetTarget=p09lpr3kmbh8fen1qepuv6zc1ldd.htm&docsetVersion=9.4&locale=en)
