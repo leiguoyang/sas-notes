@@ -144,6 +144,60 @@ data data_set_name;
   set Mylib.Productsales;
 ```
 
+## Data step
+
+- Subsetting
+- Create new columns
+- Some complicated logic with `if` flow control or with `do` loop
+
+### Subsetting
+
+Select specific rows with `if` or `where`.
+
+```sas
+data result;
+  set sashelp.cars;
+  if Make = 'Audi';
+run;
+```
+
+or
+
+```sas
+data result;
+  set sashelp.cars;
+  where Make = 'Audi';
+run;
+```
+
+Select specific rows with multiple conditions.
+
+```sas
+data result;
+  set sashelp.cars;
+  where Make = 'Audi' and Length > 150;
+run;
+```
+
+Select specific columns.
+
+```sas
+data result;
+  set sashelp.cars;
+  keep Make Model Length;
+run;
+```
+
+Select specific rows and columns.
+
+```sas
+data result;
+  set sashelp.cars;
+  keep Make Model Length;
+  where Make = 'Audi' and Length > 150;
+run;
+```
+
 ## Macro
 ### Macro variable
 定义一个macro variable
